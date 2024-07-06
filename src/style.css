@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color: #d0a2f7;
+
+  .default {
+    --color: #393e46;
+  }
+
+  .smooth-purple {
+    --color: #d0a2f7;
+  }
+
+  .dark-blue {
+    --color: #3f72af;
+  }
+
+  .light-pink {
+    --color: #f2bed1;
+  }
+}
+
+.dynamic-color {
+  color: var(--color);
+}
+
+.dynamic-backgroundcolor {
+  background-color: var(--color);
+}
+
+.dynamic-bordercolor {
+  border-color: var(--color);
+}
+
+.dynamic-focus:focus {
+  border-color: var(--color);
+}
+
+.dynamic-placeholder::placeholder {
+  color: var(--color);
+}
